@@ -132,16 +132,16 @@ public class App {
         public void changeAppointmentStatus() {
             Scanner scanner = new Scanner(System.in);
 
-            System.out.print("Enter appointment id: ");
+            System.out.print("Введите id приема: ");
             UUID appointmentId = UUID.fromString(scanner.nextLine());
 
             System.out.print("""
-                Enter new status:
-                0 - NEW
-                1 - IN PROCESS
-                2 - CANCELLED
-                3 - AWAITING PAYMENT
-                4 - COMPLETED
+                Введите новый статус:
+                0 - НОВЫЙ
+                1 - В ПРОЦЕССЕ
+                2 - ЗАКРЫТЫЙ
+                3 - ОЖИДАНИЕ ОПЛАТЫ
+                4 - ЗАВЕРШЕННЫЙ
                 """);
 
             int statusCode = scanner.nextInt();
